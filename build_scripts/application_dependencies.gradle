@@ -1,0 +1,19 @@
+// Declare application repositories and dependencies
+// Auto manage all spring boot dependencies
+apply plugin: 'org.springframework.boot'
+
+dependencies {
+    // Spring
+    compile('org.springframework.boot:spring-boot-starter-web')
+
+    compile('net.sf.jasperreports:jasperreports:6.4.1')
+
+    // Common tool like: StringUtils
+    compile('org.apache.commons:commons-lang3:3.4')
+
+    // Lombok
+    compile('org.projectlombok:lombok:1.16.12')
+
+    // For google collect lib
+    compile('com.google.guava:guava:21.0')
+}

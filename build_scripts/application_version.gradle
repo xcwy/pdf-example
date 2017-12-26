@@ -1,0 +1,4 @@
+jar {
+    baseName = 'polymorphism-json-update'
+    version = '0.1'
+}
