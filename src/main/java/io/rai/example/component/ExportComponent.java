@@ -75,6 +75,7 @@ public class ExportComponent {
       File pdf = new File(fileName);
       System.out.println(pdf.getPath());
       JasperExportManager.exportReportToPdfStream(print, new FileOutputStream(pdf));
+//      JasperExportManager.exportReportToPdfFile(fileName);
     } catch (FileNotFoundException e) {
       e.printStackTrace();
     } catch (IOException e) {

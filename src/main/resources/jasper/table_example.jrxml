@@ -1,116 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.5.0.final using JasperReports Library version 6.5.0  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2cd8aef2-1570-46e6-9474-789f936cf7b1">
-	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="JRDataSource"/>
-	<parameter name="title" class="java.lang.String"/>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="table_example" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="44c2567f-5bcc-43b8-a16a-c72d43c09073">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="UserAdapter"/>
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
-	<field name="id" class="java.lang.Integer"/>
-	<field name="name" class="java.lang.String"/>
-	<field name="age" class="java.lang.Integer"/>
-	<field name="phone" class="java.lang.String"/>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[id]]></fieldDescription>
+	</field>
+	<field name="name" class="java.lang.String">
+		<fieldDescription><![CDATA[name]]></fieldDescription>
+	</field>
+	<field name="age" class="java.lang.Integer">
+		<fieldDescription><![CDATA[age]]></fieldDescription>
+	</field>
+	<field name="phone" class="java.lang.String">
+		<fieldDescription><![CDATA[phone]]></fieldDescription>
+	</field>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="79" splitType="Stretch">
-			<textField>
-				<reportElement x="230" y="24" width="100" height="30" uuid="c84b931d-cd63-41d8-a04d-2147330cef87"/>
-				<textFieldExpression><![CDATA[$P{title}]]></textFieldExpression>
-			</textField>
-		</band>
+		<band height="79" splitType="Stretch"/>
 	</title>
-	<pageHeader>
-		<band height="35" splitType="Stretch"/>
-	</pageHeader>
-	<columnHeader>
-		<band height="61" splitType="Stretch">
-			<staticText>
-				<reportElement x="0" y="0" width="141" height="30" uuid="8bbba07d-9d9b-4d57-8387-d0d9215d216e">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f433d4d1-fcaa-4052-8fc0-07e6419b4b5c"/>
-				</reportElement>
-				<text><![CDATA[id]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="141" y="0" width="138" height="30" uuid="b85cf23b-56fa-4bd4-87a7-3311802d2af5">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0e27dbfd-e192-4d57-8610-64d86bfe451b"/>
-				</reportElement>
-				<text><![CDATA[name]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="279" y="0" width="138" height="30" uuid="59f2efa8-5f28-416a-9102-5739cd2914a4">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="eecea266-27e3-4fda-a846-3e3e817486d0"/>
-				</reportElement>
-				<text><![CDATA[age]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="417" y="0" width="138" height="30" uuid="a8dd6465-5aef-43ee-a7da-a9116e6d4f03">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="893c03a9-c128-404d-a46a-cb4f3fc61d52"/>
-				</reportElement>
-				<text><![CDATA[phone]]></text>
-			</staticText>
-		</band>
-	</columnHeader>
 	<detail>
-		<band height="125" splitType="Stretch">
-			<textField>
-				<reportElement x="0" y="0" width="141" height="30" uuid="9218cacc-c9ed-4031-b38c-7f1c647dbd44">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f433d4d1-fcaa-4052-8fc0-07e6419b4b5c"/>
+		<band height="30">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<textField isStretchWithOverflow="true">
+				<reportElement stretchType="RelativeToTallestObject" x="-10" y="0" width="141" height="30" uuid="fc93e821-a3c0-448d-8ef0-5c65e2695e7a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="16312f8c-446c-4659-9a2b-12681b94f963"/>
 				</reportElement>
 				<box>
-					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
 				</box>
-				<textElement>
-					<font fontName="华文宋体"/>
-				</textElement>
 				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement x="141" y="0" width="138" height="30" uuid="5a090d1f-e4f9-49f7-86a6-b6ab76f0b906">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0e27dbfd-e192-4d57-8610-64d86bfe451b"/>
+			<textField isStretchWithOverflow="true">
+				<reportElement stretchType="RelativeToTallestObject" x="132" y="0" width="138" height="30" uuid="0b6c76d9-583c-4bd6-92b3-8bcb7542b10c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="24af6e6c-c54a-4be2-b56f-2821b71df014"/>
 				</reportElement>
 				<box>
-					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
 				</box>
-				<textElement>
-					<font fontName="华文宋体"/>
-				</textElement>
 				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement x="279" y="0" width="138" height="30" uuid="8e038703-c7e2-4b9a-bf92-df95742b8a93">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="eecea266-27e3-4fda-a846-3e3e817486d0"/>
+			<textField isStretchWithOverflow="true">
+				<reportElement stretchType="RelativeToTallestObject" x="270" y="0" width="138" height="30" uuid="8f93056f-13d3-4b45-9788-152d3c9f92d6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7092c335-24f4-48ed-b5c7-7648dfd8f438"/>
 				</reportElement>
 				<box>
-					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
 				</box>
-				<textElement>
-					<font fontName="华文宋体"/>
-				</textElement>
 				<textFieldExpression><![CDATA[$F{age}]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement x="417" y="0" width="138" height="30" uuid="f69fa82c-5a88-4b97-aa22-f7b4d6a30263">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="893c03a9-c128-404d-a46a-cb4f3fc61d52"/>
+			<textField isStretchWithOverflow="true">
+				<reportElement stretchType="RelativeToTallestObject" x="408" y="0" width="138" height="30" uuid="2fab095f-f483-4289-874d-a613541d5daa">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="441b4fed-2617-4af6-a20c-21893bb25dc4"/>
 				</reportElement>
 				<box>
-					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
 				</box>
-				<textElement>
-					<font fontName="华文宋体"/>
-				</textElement>
 				<textFieldExpression><![CDATA[$F{phone}]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>
-	<columnFooter>
-		<band height="45" splitType="Stretch"/>
-	</columnFooter>
-	<pageFooter>
-		<band height="54" splitType="Stretch"/>
-	</pageFooter>
-	<summary>
-		<band height="42" splitType="Stretch"/>
-	</summary>
 </jasperReport>

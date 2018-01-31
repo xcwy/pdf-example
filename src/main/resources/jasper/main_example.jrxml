@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.5.0.final using JasperReports Library version 6.5.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="main_example" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ad1e315e-105a-44c6-9764-000725391b11">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="UserAdapter"/>
+	<subDataset name="userDataSet" uuid="04c3e2c4-97dd-474f-82bd-fe7e39ee738f">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="UserAdapter"/>
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="id" class="java.lang.Integer"/>
+		<field name="name" class="java.lang.String"/>
+		<field name="age" class="java.lang.Integer"/>
+		<field name="phone" class="java.lang.String"/>
+	</subDataset>
+	<parameter name="SUB_REPORT" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="SUB_LIST" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<summary>
+		<band height="296" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<subreport>
+				<reportElement x="20" y="10" width="200" height="200" uuid="56d6e4dd-3be5-4e77-904d-2da4d3c25294"/>
+				<parametersMapExpression><![CDATA[$P{SUB_REPORT}]]></parametersMapExpression>
+				<connectionExpression><![CDATA[$P{SUB_LIST}]]></connectionExpression>
+				<subreportExpression><![CDATA["jasper/sub_example2.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</summary>
+</jasperReport>
