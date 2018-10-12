@@ -27,8 +27,7 @@ import net.sf.jasperreports.engine.JasperReport;
  */
 public class ExportComponent {
 
-  public void export(String jasperFileName, Map<String, Object> parameters,
-      JRDataSource dataSource, String filename) {
+  public void export(String jasperFileName, Map<String, Object> parameters, JRDataSource dataSource, String filename) {
     InputStream in = null;
     JasperPrint jasperPrint;
     try {
